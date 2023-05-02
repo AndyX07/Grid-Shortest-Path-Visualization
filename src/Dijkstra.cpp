@@ -12,7 +12,6 @@ Dijkstra::Dijkstra()
     runDijkstra();
     printPath();
     while(true);
-    // Place the grid cursor in the middle of the screen.
 }
 
 void Dijkstra::run(){
@@ -84,11 +83,9 @@ void Dijkstra::run(){
                 }
         }
 
-        // Draw grid background.
         SDL_SetRenderDrawColor(renderer, grid_background.r, grid_background.g,
                                grid_background.b, grid_background.a);
 
-        // Draw grid lines.
         SDL_SetRenderDrawColor(renderer, grid_line_color.r, grid_line_color.g,
                                grid_line_color.b, grid_line_color.a);
 
@@ -102,7 +99,6 @@ void Dijkstra::run(){
             SDL_RenderDrawLine(renderer, 0, y, window_width, y);
         }
 
-        // Draw grid cursor.
         SDL_SetRenderDrawColor(renderer, grid_cursor_color.r,
                                grid_cursor_color.g, grid_cursor_color.b,
                                grid_cursor_color.a);
